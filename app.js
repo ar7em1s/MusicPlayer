@@ -29,7 +29,7 @@ song.onpause = function() {
     isPlaying = false;
 }
 
-setInterval(() => { //prevents the auto-start on load; fix #1
+setInterval(() => {
     if (isPlaying) {
         progress.value = song.currentTime;
     }
